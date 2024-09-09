@@ -66,6 +66,7 @@ Module.symvers
 #
 !.gitignore
 !.mailmap
+!.gitmodules
 
 #
 # Generated include files
@@ -112,3 +113,6 @@ all.config
 
 # Kdevelop4
 *.kdev4
+
+# Out folder
+out/
