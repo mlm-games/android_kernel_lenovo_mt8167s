@@ -1240,7 +1240,10 @@ CONFIG_MTK_SM5414_SUPPORT=y
 #
 # MultiMedia, Display, Camera related configs
 #
-CONFIG_CUSTOM_KERNEL_IMGSENSOR="gc2375_mipi_raw sp2509_blx_mipi_raw sp2509_mipi_raw gc2375_blx_mipi_raw"
+
+# # Currently does not have some of the img sensors so removing the missing one
+# CONFIG_CUSTOM_KERNEL_IMGSENSOR="gc2375_mipi_raw sp2509_blx_mipi_raw sp2509_mipi_raw gc2375_blx_mipi_raw"
+CONFIG_CUSTOM_KERNEL_IMGSENSOR="gc2375h_mipi_raw sp2509_mipi_raw"
 CONFIG_CUSTOM_KERNEL_CAM_CAL_DRV=""
 CONFIG_MTK_SEC_VIDEO_PATH_SUPPORT=y
 CONFIG_MTK_DRM_KEY_MNG_SUPPORT=y
@@ -1272,7 +1275,9 @@ CONFIG_CUSTOM_KERNEL_HDMI=""
 CONFIG_MTK_IMGSENSOR=y
 # CONFIG_MTK_JPEG is not set
 CONFIG_MTK_LCM=y
-CONFIG_CUSTOM_KERNEL_LCM="hx8394d_mipi_dsi_vdo_boe nt35521z_mipi_dsi_vdo_gx hx8279_mipi_dsi_vdo_txd nt51021b_mipi_dsi_vdo_dj nt51021b_mipi_dsi_vdo_gx nt51021b_mipi_dsi_vdo_ds"
+# # Again missing drivers, add the line excluding the missing one
+#CONFIG_CUSTOM_KERNEL_LCM="hx8394d_mipi_dsi_vdo_boe nt35521z_mipi_dsi_vdo_gx hx8279_mipi_dsi_vdo_txd nt51021b_mipi_dsi_vdo_dj nt51021b_mipi_dsi_vdo_gx nt51021b_mipi_dsi_vdo_ds"
+#CONFIG_CUSTOM_KERNEL_LCM="nt35521z_mipi_dsi_vdo_gx nt51021b_mipi_dsi_vdo_dj nt51021b_mipi_dsi_vdo_gx nt51021b_mipi_dsi_vdo_ds"
 # CONFIG_MTK_LCM_DEVICE_TREE_SUPPORT is not set
 CONFIG_MTK_LENS=y
 # CONFIG_MTK_LENS_USE_MODULE is not set
