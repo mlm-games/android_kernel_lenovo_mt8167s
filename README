@@ -1,4 +1,7 @@
-        Linux kernel release 4.x <http://kernel.org/>
+
+Cloned from deadman's android_kernel_lenovo_mt8167s repo for 7304F testing, obv. drivers were missing...
+
+Linux kernel release 4.x <http://kernel.org/>
 
 These are the release notes for Linux version 4.  Read them carefully,
 as they tell you what this is all about, explain how to install the
