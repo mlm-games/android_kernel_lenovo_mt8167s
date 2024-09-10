@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 root_dir=$(pwd)
 cd ${root_dir} && cd ..
