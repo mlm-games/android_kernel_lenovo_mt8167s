@@ -12,7 +12,7 @@ mkdir out
 export CROSS_COMPILE="$kernel_dir/aarch64-linux-android-4.9/bin/aarch64-linux-android-"
 export ARCH=arm64
 
-make ARCH=arm64 O=out hq8167_tb_n_defconfig
+make ARCH=arm64 O=out aud8516p1_64_basic_debug_defconfig
 status=${PIPESTATUS[0]}
 if [ "$status" != "0" ]; then 
      echo "ERROR:  make defconfig  error:"
